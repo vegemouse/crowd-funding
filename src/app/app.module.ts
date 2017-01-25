@@ -11,6 +11,7 @@ import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { ProjectComponent } from './project/project.component';
 import { BenefitComponent } from './benefit/benefit.component';
+import { CategoryComponent } from './category/category.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -25,7 +26,8 @@ export const firebaseConfig = {
     HomeComponent,
     ProjectComponent,
     ProjectComponent,
-    BenefitComponent
+    BenefitComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,
