@@ -1,5 +1,18 @@
-  <ul class="benefits">Benefits: 
-    <li *ngFor="let benefit of (projectToDisplay | async)?.benefits">
-      {{benefit}}
-    </li>
-  </ul>
+<h2 class="addMarginBenefits">Benefits</h2>
+<div *ngFor="let benefit of (projectToDisplay | async)?.benefits">
+  <div class="row">
+    <div class="col m12">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">{{benefit.name}}</span>
+          <p>For donating {{benefit.value}}</p>
+          <br><br>
+          <p>{{benefit.description}}</p>
+        </div>
+        <div class="card-action">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
