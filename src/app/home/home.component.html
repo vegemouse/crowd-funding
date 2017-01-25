@@ -1,5 +1,4 @@
 <h2>Projects</h2>
 <div *ngFor="let project of projects | async" (click)="goToDetailPage(project)">
-  <h3>{{project.title}}</h3>
-
+  <h3 class="project-name">{{project.title}}</h3>
 </div>

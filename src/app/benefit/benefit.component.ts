@@ -1,18 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
-import { Project } from '../project.model';
-import { ProjectService } from '../project.service';
+import { Project } from './../project.model';
+import { ProjectService } from './../project.service';
+import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
 @Component({
-  selector: 'app-project',
-  templateUrl: './project.component.html',
-  styleUrls: ['./project.component.css'],
+  selector: 'app-benefit',
+  templateUrl: './benefit.component.html',
+  styleUrls: ['./benefit.component.css'],
   providers: [ProjectService]
 })
-export class ProjectComponent implements OnInit {
+export class BenefitComponent implements OnInit {
   projectId: string;
   projectToDisplay;
+  benefitsToDisplay;
 
   constructor(
     private route: ActivatedRoute,
@@ -25,6 +27,7 @@ export class ProjectComponent implements OnInit {
       this.projectId = urlParameters['id'];
     });
     this.projectToDisplay = this.projectService.getProjectById(this.projectId);
+    this.benefitsToDisplay = this.projectToDisplay.benefits;
 
   }
 

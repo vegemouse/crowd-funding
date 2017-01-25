@@ -7,4 +7,12 @@
   <p [innerHTML]="(projectToDisplay | async)?.description"></p>
   <p>Fundraising Goal: {{(projectToDisplay | async)?.moneyGoal}}</p>
   <p>Days left: {{(projectToDisplay | async)?.daysToGoal}}</p>
+  <ul>
+    Benefits:
+    <li *ngFor="let benefit of projectToDisplay.benefits">
+      {{benefit}}
+    </li>
+  </ul>
 </div>
+
+<app-benefit></app-benefit>
