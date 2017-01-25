@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Project } from '../project.model';
+import { Router } from '@angular/router';
+import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +9,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-
-  
+  projects: FirebaseListObservable<any[]>;
 
 }

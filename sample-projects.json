@@ -2,9 +2,7 @@
     "title": "Oregon State Trooper Wounded 12/25",
     "managers": "Jeff Cederberg",
     "teaser": "On Christmas night Oregon State Trooper Nic Cederberg (32) was shot multiple times at close range while engaging a murder suspect, who died during the confrontation.",
-    "description": "On Christmas night Oregon State Trooper Nic Cederberg (32) was shot multiple times at close range while engaging a murder suspect, who died during the confrontation.  Nic sustained life threatening injuries, and is currently in the intensive care unit at a Portland hospital.  He's undergone multiple lengthy surgeries and has a long road of recovery ahead of him.   We are also very lucky to have him still with us.
-    <br><br>
-    Nic's brave actions that night are no suprise to anyone that knows and loves him.  He's not the type to run from a fight and unfortunately during this fight he was hurt fairly bad.  He loves being an OSP officer and is extremely good at what he does.  He pours his heart and soul into protecting each and everyone of us, and now we are asking for you to send a little bit of that love his way.",
+    "description": "On Christmas night Oregon State Trooper Nic Cederberg (32) was shot multiple times at close range while engaging a murder suspect, who died during the confrontation.  Nic sustained life threatening injuries, and is currently in the intensive care unit at a Portland hospital.  He has undergone multiple lengthy surgeries and has a long road of recovery ahead of him. We are also very lucky to have him still with us. <br><br>Nics brave actions that night are no suprise to anyone that knows and loves him.  He has not the type to run from a fight and unfortunately during this fight he was hurt fairly bad.  He loves being an OSP officer and is extremely good at what he does.  He pours his heart and soul into protecting each and everyone of us, and now we are asking for you to send a little bit of that love his way.",
     "moneyGoal": 100000,
     "moneyRaised": 0,
     "benefits": ["Feel good about yourself", "Cop hat"],
@@ -12,18 +10,11 @@
     "city": "Tigard, OR",
     "daysToGoal": 28,
     "category": "medical"
-  },
-  {
+  }, {
     "title": "Run for All Women",
     "managers": "Alison Mariella Desir",
     "teaser": "We will arrive in DC on January 20th to join all of our powerful, beautiful, and courageous sisters in the Women's March. There will be four of us running, but we’ll be running for all of us.",
-    "description": "On January 16, 2017, MLK Day, I (and a small team) will begin a 240-mile run from Harlem to Washington DC in an effort to raise money and awareness for Planned Parenthood and the awesome power of women. (To put it into context, we'll be running roughly two NYC Marathons each day). We will arrive in DC on January 20th to join all of our powerful, beautiful, and courageous sisters in the Women's March. There will be four of us running, but we’ll be running for all of us.
-    <br><br>
-    If you would like to support Planned Parenthood and our run, please donate here (we are hoping to raise $44,000 in honor of the 44th President, Barack Hussein Obama).
-    <br><br>
-    Please join us along the route.  We would love to run through your city with you, and will be sure to carry the baton of hope and health all the way to our nation's capitol.
-    <br><br>
-    I can't do much, but I CAN do this. See you in DC.",
+    "description": "On January 16, 2017, MLK Day, I (and a small team) will begin a 240-mile run from Harlem to Washington DC in an effort to raise money and awareness for Planned Parenthood and the awesome power of women. (To put it into context, we'll be running roughly two NYC Marathons each day). We will arrive in DC on January 20th to join all of our powerful, beautiful, and courageous sisters in the Women's March. There will be four of us running, but we’ll be running for all of us.<br><br>If you would like to support Planned Parenthood and our run, please donate here (we are hoping to raise $44,000 in honor of the 44th President, Barack Hussein Obama).<br><br>Please join us along the route.  We would love to run through your city with you, and will be sure to carry the baton of hope and health all the way to our nation's capitol.<br><br> I can't do much, but I CAN do this. See you in DC.",
     "moneyGoal": 44000,
     "moneyRaised": 0,
     "benefits": ["Pair of shoes", "Phone Call", "Button and Scarf"],
@@ -31,14 +22,11 @@
     "city": "New York, NY",
     "daysToGoal": 22,
     "category": "social justice"
-  },
-  {
+  }, {
     "title": "STAND for Standing Rock NO DAPL",
     "managers": "Lynne Colombe",
     "teaser": "We are dealing with a crisis of many water protectors being moved from the main camp, forcibly. I am working NOW to PROTECT AS MANY WATER PROTECTORS AS POSSIBLE! ",
-    "description": "Round one endeavors are being completed as we speak; as the movement is as quick moving as the Cannonball River after a rain.  Our weather has been overall better than normal, and we remain blessed.  Winter camp preparations are still underway; and individual campers connected to the S4SR Funds are still \"Under our umbrella,\" and are assisted by our funds in helping them meet minimum living expenses to live at the camps.  We are so busy working and the focus has changed so much.  Right now, we are working on some supplies to be used in peaceful protest.  We cannot declare what the supplies are exactly, but all things can be purchased at a sporting goods store and are an exercise of our solidarity in peaceful example.
-    <br><br>
-      Please come back in a couple of days, keep praying, keep believing, keep sharing, keep giving, keep helping, keep loving, and keep fighting with us!  We CANNOT STAND without YOU!  Help us STAND!  THIS IS NOT OVER!   ROUND ONE FINAL GOFUND UPDATE 11/4/16  Well, my friends, its time to end this particular fund.  We have focused on (so far) 5 different things to put your hard earned and dedicated dollars to work...  To all donors WOPILA!  To all our repeat donors who stuck by our side through this whole fund WOPILA TANKA!  You are all standing with us!  We are putting your names on our donor tipi and on donor flags to fly at our Consulate as we speak!   We have made so much impact together!  From 1) Supply; to 2) Travel funds for water protectors; to 3) Winter Camp lodging, vehicles, and safety measures; then 4) assistance to campers and camp kitchens, building infrastructure, and bringing in new crew; to now 5) 1st hand assistance with action and events - including media coverage of the actions taking place!  ",
+    "description": "Round one endeavors are being completed as we speak; as the movement is as quick moving as the Cannonball River after a rain.  Our weather has been overall better than normal, and we remain blessed.  ",
     "moneyGoal": 184000,
     "moneyRaised": 0,
     "benefits": ["We'll Say A Prayer", "Phone Call"],
@@ -46,6 +34,5 @@
     "city": "Mission, SD",
     "daysToGoal": 150,
     "category": "social justice"
-  }
-  ]
+  }]
 }
