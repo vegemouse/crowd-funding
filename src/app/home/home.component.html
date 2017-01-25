@@ -1,4 +1,10 @@
 <h2>Projects</h2>
-<div *ngFor="let project of projects | async" (click)="goToDetailPage(project)">
+<div *ngFor="let project of projects | async | category:filterByCategory" (click)="goToDetailPage(project)">
   <h3 class="project-name">{{project.title}}</h3>
 </div>
+
+<select (change)="onChange($event.target.value)">
+  <option value="allCategories" selected="selected">All Categories</option>
+  <option value="social justice">Social Justice</option>
+  <option value="medical">Medical</option>
+</select>

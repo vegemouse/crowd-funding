@@ -2,17 +2,10 @@
   <h3>{{(projectToDisplay | async)?.title}}</h3>
   <img src= "{{(projectToDisplay | async)?.image}}" />
   <h4>{{(projectToDisplay | async)?.managers}} from {{(projectToDisplay | async)?.city}} </h4>
-  {{(projectToDisplay | async)?.category}}
+  <div class="chip">{{(projectToDisplay | async)?.category}}</div>
   <br><br>
   <p [innerHTML]="(projectToDisplay | async)?.description"></p>
   <p>Fundraising Goal: {{(projectToDisplay | async)?.moneyGoal}}</p>
   <p>Days left: {{(projectToDisplay | async)?.daysToGoal}}</p>
-  <ul>
-    Benefits:
-    <li *ngFor="let benefit of projectToDisplay.benefits">
-      {{benefit}}
-    </li>
-  </ul>
+  <app-benefit></app-benefit>
 </div>
-
-<app-benefit></app-benefit>

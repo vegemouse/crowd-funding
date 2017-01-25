@@ -12,6 +12,7 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 })
 export class HomeComponent implements OnInit{
   projects: FirebaseListObservable<any[]>;
+  filterByCategory: string = "";
 
   constructor(private router: Router, private projectService: ProjectService) {}
 
@@ -23,5 +24,8 @@ export class HomeComponent implements OnInit{
     this.router.navigate(['projects', clickedProject.$key])
   };
 
+  onChange(optionFromMenu) {
+  this.filterByCategory = optionFromMenu;
+}
 
 }

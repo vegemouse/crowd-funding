@@ -1,7 +1,5 @@
-<div>
-
-  <div *ngFor="let benefit of (projectToDisplay | async)?.benefits">
-    <h3>{{benefit}}</h3>
-  </div>
-
-</div>
+  <ul class="benefits">Benefits: 
+    <li *ngFor="let benefit of (projectToDisplay | async)?.benefits">
+      {{benefit}}
+    </li>
+  </ul>

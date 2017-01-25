@@ -6,12 +6,11 @@ import { routing } from './app.routing';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-
+import { CategoryPipe } from './category.pipe';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { ProjectComponent } from './project/project.component';
 import { BenefitComponent } from './benefit/benefit.component';
-import { CategoryComponent } from './category/category.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -27,7 +26,7 @@ export const firebaseConfig = {
     ProjectComponent,
     ProjectComponent,
     BenefitComponent,
-    CategoryComponent
+    CategoryPipe
   ],
   imports: [
     BrowserModule,
