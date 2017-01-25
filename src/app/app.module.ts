@@ -7,7 +7,7 @@ import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
-import { masterFirebaseConfig } from './api-keys'
+import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { ProjectComponent } from './project/project.component';
 
@@ -22,6 +22,7 @@ export const firebaseConfig = {
   declarations: [
     AppComponent,
     HomeComponent,
+    ProjectComponent,
     ProjectComponent
   ],
   imports: [
