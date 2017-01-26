@@ -13,6 +13,7 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 export class HomeComponent implements OnInit{
   projects: FirebaseListObservable<any[]>;
   filterByCategory: string = "";
+  currentRoute: string = this.router.url;
 
   constructor(private router: Router, private projectService: ProjectService) {}
 

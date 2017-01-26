@@ -21,4 +21,17 @@ export class ProjectService {
   addProject(newProject: Project) {
     this.projects.push(newProject);
   }
+
+  updateProject(localUpdatedProject){
+    var projectEntryInFirebase = this.getProjectById(localUpdatedProject.$key);
+    projectEntryInFirebase.update({category: localUpdatedProject.category,
+                                title: localUpdatedProject.title,
+                                manager: localUpdatedProject.manager,
+                                teaser: localUpdatedProject.teaser,
+                                description: localUpdatedProject.description,
+                                moneyGoal: localUpdatedProject.moneyGoal,
+                                image: localUpdatedProject.image,
+                                city: localUpdatedProject.city,
+                                daysToGoal: localUpdatedProject.daysToGoal});
+  }
 }

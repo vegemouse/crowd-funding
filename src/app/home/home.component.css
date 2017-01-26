@@ -18,3 +18,10 @@ select {
 .hover:hover {
   cursor: pointer;
 }
+
+.centerHomeHeader {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

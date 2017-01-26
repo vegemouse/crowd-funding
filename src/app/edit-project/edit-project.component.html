@@ -1,1 +1,62 @@
+<button (click)="editClicked()" class="btn waves-effect waves-light" >Edit</button>
 
+<div class="editModule" *ngIf="editFormShow">
+  <div class="row">
+    <div class=" formDiv">
+      <h1>Edit Project</h1>
+      <h3>All fields are required</h3>
+    </div>
+
+    <div class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <select class="showSelect" [(ngModel)]="selectedProject.category">
+            <option value="" disabled selected>Select Project Category</option>
+            <option value="social justice">Social Justice</option>
+            <option value="medical">Medical</option>
+            <option value="entertainment">Entertainment</option>
+          </select>
+        </div>
+        <div class="input-field col s6">
+          <input type="text" [(ngModel)]="selectedProject.title">
+        </div>
+        <div class="input-field col s6">
+          <input type="text" [(ngModel)]="selectedProject.manager">
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s3">
+          <input type="number" [(ngModel)]="selectedProject.moneyGoal">
+        </div>
+        <div class="input-field col s3">
+          <input type="number" [(ngModel)]="selectedProject.daysToGoal">
+        </div>
+        <div class="input-field col s6">
+          <input type="text" [(ngModel)]="selectedProject.city">
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input type="text" [(ngModel)]="selectedProject.image">
+        </div>
+      </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input type="text" [(ngModel)]="selectedProject.teaser">
+          </div>
+        </div>
+      <div class="row">
+          <div class="input-field col s12">
+            <input type="text" [(ngModel)]="selectedProject.description">
+        </div>
+      </div>
+      <div class="centerSubmitButton">
+        <button class="submitForm btn waves-effect waves-light" (click)="beginUpdatingProject(selectedProject)">Submit
+         </button>
+         <button class="submitForm btn waves-effect waves-light" (click)="editCancel()">Cancel
+          </button>
+      </div>
+      <br><br><br>
+    </div>
+  </div>
+</div>
