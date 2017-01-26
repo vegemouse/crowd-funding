@@ -28,5 +28,10 @@ export class EditProjectComponent implements OnInit {
   editCancel() {
     this.editFormShow = false;
   }
+  beginDeletingProject(projectToDelete){
+    if(confirm("Are you sure you want to delete this item from the inventory?")){
+      this.projectService.deleteProject(projectToDelete);
+    }
+  }
 
 }

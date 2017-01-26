@@ -34,4 +34,9 @@ export class ProjectService {
                                 city: localUpdatedProject.city,
                                 daysToGoal: localUpdatedProject.daysToGoal});
   }
+
+  deleteProject(localProjectToDelete){
+    var projectEntryInFirebase = this.getProjectById(localProjectToDelete.$key);
+    projectEntryInFirebase.remove();
+  }
 }
