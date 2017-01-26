@@ -17,12 +17,12 @@ export class AdminComponent {
   newBenefits: Benefit[] = [];
   // newBenefit: Benefit;
 
-  submitForm(title, manager, teaser, description, moneyGoal, image, city, daysToGoal) {
+  submitForm(category, title, manager, teaser, description, moneyGoal, image, city, daysToGoal) {
 
-    if (title && manager && teaser && description && moneyGoal && image && city && daysToGoal) {
+    if (category && title && manager && teaser && description && moneyGoal && image && city && daysToGoal) {
       var confirmed = confirm("Have you added all the benefits you want?");
       if (confirmed) {
-        var newProject: Project = new Project(title, manager, teaser, description, moneyGoal, image, city, daysToGoal, "category", this.newBenefits);
+        var newProject: Project = new Project(title, manager, teaser, description, moneyGoal, image, city, daysToGoal, category, this.newBenefits);
         this.projectService.addProject(newProject);
         console.log(newProject);
       }
