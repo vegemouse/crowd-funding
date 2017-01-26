@@ -42,7 +42,7 @@
           <label>Full Description</label>
       </div>
     </div>
-    <div class="row">
+    <div class="row well">
       <h3>Add Benefit</h3>
       <div class="input-field col s4">
         <input type="text" #benefitName>
@@ -54,11 +54,12 @@
       </div>
       <div class="input-field col s4">
         <input type="text" #benefitDescription>
-        <label>Descriton</label>
+        <label>Description</label>
       </div>
+      <button class="btn waves-effect waves-light" (click)="submitBenefitForm(benefitName.value, benefitValue.value, benefitDescription.value); benefitName.value=''; benefitValue.value=''; benefitDescription.value='';">Add Benefit
+       </button>
     </div>
-    <button class="btn waves-effect waves-light" (click)="submitForm(newTitle.value, newManager.value, newTeaser.value, newDescription.value, newMoneyGoal.value, newImage.value, newCity.value, newDaysToGoal.value, benefitName.value, benefitValue.value, benefitDescription.value)">Submit
-       <i class="material-icons right">send</i>
+    <button class="btn waves-effect waves-light" (click)="submitForm(newTitle.value, newManager.value, newTeaser.value, newDescription.value, newMoneyGoal.value, newImage.value, newCity.value, newDaysToGoal.value )">Submit
      </button>
   </form>
 </div>

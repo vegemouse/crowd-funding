@@ -17,17 +17,19 @@ export class AdminComponent {
   newBenefits: Benefit[] = [];
   // newBenefit: Benefit;
 
-  submitForm(title, manager, teaser, description, moneyGoal, image, city, daysToGoal, benefitName, benefitValue, benefitDescription) {
+  submitForm(title, manager, teaser, description, moneyGoal, image, city, daysToGoal) {
 
-    var newBenefit = new Benefit(benefitName, benefitValue, benefitDescription);
-
-
-    this.newBenefits.push(newBenefit);
 
     var newProject: Project = new Project(title, manager, teaser, description, parseInt(moneyGoal), image, city, parseInt(daysToGoal), "category", this.newBenefits);
 
     this.projectService.addProject(newProject);
     console.log(newProject);
+  }
+
+  submitBenefitForm(name, value, description) {
+    var newBenefit = new Benefit(name, value, description);
+    this.newBenefits.push(newBenefit);
+    console.log(this.newBenefits)
   }
 
 }
