@@ -1,48 +1,63 @@
 <div class="row">
   <form class="col s12">
     <div class="row">
-      <div class="input-field col s6 showForms">
+      <div class="input-field col s6">
         <input type="text" #newTitle>
         <label>Project Title</label>
       </div>
-      <div class="input-field col s6 showForms">
+      <div class="input-field col s6">
         <input type="text" #newManager>
         <label>Project Manager</label>
       </div>
     </div>
     <div class="row">
-      <div class="input-field col s3 showForms">
+      <div class="input-field col s3">
         <input type="text" #newMoneyGoal>
         <label>Money Goal</label>
       </div>
-      <div class="input-field col s3 showForms">
+      <div class="input-field col s3">
         <input type="text" #newDaysToGoal>
         <label>Length of Fundraiser (In Days)</label>
       </div>
-      <div class="input-field col s6 showForms">
+      <div class="input-field col s6">
         <input type="text" #newCity>
         <label>City and State</label>
       </div>
     </div>
     <div class="row">
-      <div class="input-field col s12 showForms">
+      <div class="input-field col s12">
         <input type="text" #newImage>
         <label>Image URL</label>
       </div>
     </div>
       <div class="row">
-        <div class="input-field col s12 showForms">
+        <div class="input-field col s12">
           <input type="text" #newTeaser>
           <label>Short Description</label>
         </div>
       </div>
     <div class="row">
-        <div class="input-field col s12 showForms">
+        <div class="input-field col s12">
           <input type="text" #newDescription>
           <label>Full Description</label>
       </div>
     </div>
-    <button class="btn waves-effect waves-light" (click)="submitForm(newTitle.value, newManager.value, newTeaser.value, newDescription.value, newMoneyGoal.value, newImage.value, newCity.value, newDaysToGoal.value)">Submit
+    <div class="row">
+      <h3>Add Benefit</h3>
+      <div class="input-field col s4">
+        <input type="text" #benefitName>
+        <label>Name</label>
+      </div>
+      <div class="input-field col s4">
+        <input type="text" #benefitValue>
+        <label>Value</label>
+      </div>
+      <div class="input-field col s4">
+        <input type="text" #benefitDescription>
+        <label>Descriton</label>
+      </div>
+    </div>
+    <button class="btn waves-effect waves-light" (click)="submitForm(newTitle.value, newManager.value, newTeaser.value, newDescription.value, newMoneyGoal.value, newImage.value, newCity.value, newDaysToGoal.value, benefitName.value, benefitValue.value, benefitDescription.value)">Submit
        <i class="material-icons right">send</i>
      </button>
   </form>
