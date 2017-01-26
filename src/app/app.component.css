@@ -1,0 +1,8 @@
+.titleStyle {
+  font-size: 3em;
+  color: white;
+}
+
+.titleStyle:hover {
+  text-decoration: none;
+}

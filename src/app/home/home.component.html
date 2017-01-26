@@ -8,7 +8,20 @@
   </select>
 </div>
 
-
-<div *ngFor="let project of projects | async | category:filterByCategory" (click)="goToDetailPage(project)">
-  <h3 class="project-name">{{project.title}}</h3>
+<div class="row">
+  <div class="col s4" *ngFor="let project of projects | async | category:filterByCategory">
+    <div class="card">
+      <div class="card-image hover" (click)="goToDetailPage(project)">
+        <img src={{project.image}} class="cardImageStyle">
+        <span class="card-title">{{project.title}}</span>
+      </div>
+      <div class="card-content">
+        <h5>${{project.moneyRaised}} / ${{project.moneyGoal}} raised</h5>
+        <p>{{project.teaser}}</p>
+      </div>
+      <div class="card-action">
+        <a class="hover" (click)="goToDetailPage(project)">View Project Details</a>
+      </div>
+    </div>
+  </div>
 </div>

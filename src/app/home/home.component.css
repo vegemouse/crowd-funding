@@ -10,3 +10,11 @@ select {
   font-size: 1.2em;
   height: 40px;
 }
+
+.cardImageStyle {
+  height: 250px;
+}
+
+.hover:hover {
+  cursor: pointer;
+}

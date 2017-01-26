@@ -2,7 +2,7 @@
   <div class="col-md-9">
     <div>
       <h2>{{(projectToDisplay | async)?.title}}</h2>
-      <img src= "{{(projectToDisplay | async)?.image}}" />
+      <img src= "{{(projectToDisplay | async)?.image}}" class="project-image"/>
       <h4>{{(projectToDisplay | async)?.managers}} from {{(projectToDisplay | async)?.city}} </h4>
       <div class="chip">{{(projectToDisplay | async)?.category}}</div>
       <br><br>
