@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AngularFire, FirebaseObjectObservable } from 'angularfire2';
 import { ProjectService } from '../project.service';
+import { Router } from '@angular/router';
 import { Project } from '../project.model';
 import { Benefit } from '../benefit.model';
 
@@ -12,7 +13,7 @@ import { Benefit } from '../benefit.model';
 })
 export class AdminComponent {
 
-  constructor(private projectService: ProjectService) { }
+  constructor(private projectService: ProjectService, private router: Router) { }
 
   newBenefits: Benefit[] = [];
   // newBenefit: Benefit;
@@ -25,6 +26,8 @@ export class AdminComponent {
         var newProject: Project = new Project(title, manager, teaser, description, moneyGoal, image, city, daysToGoal, category, this.newBenefits);
         this.projectService.addProject(newProject);
         console.log(newProject);
+        this.router.navigate(['']);
+
       }
     } else {
       alert("Please fill out all fields");

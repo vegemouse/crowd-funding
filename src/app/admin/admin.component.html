@@ -64,7 +64,7 @@
             <label>Name</label>
           </div>
           <div class="input-field col s4">
-            <input type="text" #benefitValue>
+            <input type="number" #benefitValue>
             <label>Value</label>
           </div>
           <div class="input-field col s4">
@@ -89,7 +89,7 @@
       </div>
     </div>
     <div class="centerSubmitButton">
-      <button class="submitForm btn waves-effect waves-light" (click)="submitForm(newCategory.value, newTitle.value, newManager.value, newTeaser.value, newDescription.value, newMoneyGoal.value, newImage.value, newCity.value, newDaysToGoal.value )">Submit
+      <button href="#editProjects" class="submitForm btn waves-effect waves-light" (click)="submitForm(newCategory.value, newTitle.value, newManager.value, newTeaser.value, newDescription.value, newMoneyGoal.value, newImage.value, newCity.value, newDaysToGoal.value)">Submit
        </button>
     </div>
     <br><br><br>
