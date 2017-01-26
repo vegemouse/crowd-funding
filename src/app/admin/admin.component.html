@@ -1,4 +1,9 @@
 <div class="row">
+  <div class=" formDiv">
+    <h1>Create New Project</h1>
+    <h3>All fields are required</h3>
+  </div>
+
   <form class="col s12">
     <div class="row">
       <div class="input-field col s6">
@@ -12,11 +17,11 @@
     </div>
     <div class="row">
       <div class="input-field col s3">
-        <input type="text" #newMoneyGoal>
+        <input type="number" #newMoneyGoal>
         <label>Money Goal</label>
       </div>
       <div class="input-field col s3">
-        <input type="text" #newDaysToGoal>
+        <input type="number" #newDaysToGoal>
         <label>Length of Fundraiser (In Days)</label>
       </div>
       <div class="input-field col s6">
@@ -42,24 +47,43 @@
           <label>Full Description</label>
       </div>
     </div>
-    <div class="row well">
-      <h3>Add Benefit</h3>
-      <div class="input-field col s4">
-        <input type="text" #benefitName>
-        <label>Name</label>
+    <div class="row">
+      <div class="col m9 panel panel-default">
+        <div class="panel-heading benefitHeader indigo"><h3>Add Benefit</h3></div>
+        <div class="panel-body">
+          <div class="input-field col s4">
+            <input type="text" #benefitName>
+            <label>Name</label>
+          </div>
+          <div class="input-field col s4">
+            <input type="text" #benefitValue>
+            <label>Value</label>
+          </div>
+          <div class="input-field col s4">
+            <input type="text" #benefitDescription>
+            <label>Description</label>
+          </div>
+          <br><br><br><br>
+          <div class="centerSubmitButton">
+
+            <button class="btn waves-effect waves-light" (click)="submitBenefitForm(benefitName.value, benefitValue.value, benefitDescription.value); benefitName.value=''; benefitValue.value=''; benefitDescription.value='';">Add Benefit
+             </button>
+           </div>
+        </div>
       </div>
-      <div class="input-field col s4">
-        <input type="text" #benefitValue>
-        <label>Value</label>
+      <div class="col m3 panel panel-default">
+        <div class="panel-heading benefitHeader indigo"><h3>Stored Benefits:</h3></div>
+          <div class="panel-body ">
+            <div *ngFor="let benefit of newBenefits">
+            {{benefit.name}}
+          </div>
+        </div>
       </div>
-      <div class="input-field col s4">
-        <input type="text" #benefitDescription>
-        <label>Description</label>
-      </div>
-      <button class="btn waves-effect waves-light" (click)="submitBenefitForm(benefitName.value, benefitValue.value, benefitDescription.value); benefitName.value=''; benefitValue.value=''; benefitDescription.value='';">Add Benefit
+    </div>
+    <div class="centerSubmitButton">
+      <button class="submitForm btn waves-effect waves-light" (click)="submitForm(newTitle.value, newManager.value, newTeaser.value, newDescription.value, newMoneyGoal.value, newImage.value, newCity.value, newDaysToGoal.value )">Submit
        </button>
     </div>
-    <button class="btn waves-effect waves-light" (click)="submitForm(newTitle.value, newManager.value, newTeaser.value, newDescription.value, newMoneyGoal.value, newImage.value, newCity.value, newDaysToGoal.value )">Submit
-     </button>
+
   </form>
 </div>

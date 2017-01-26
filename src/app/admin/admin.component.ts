@@ -19,17 +19,27 @@ export class AdminComponent {
 
   submitForm(title, manager, teaser, description, moneyGoal, image, city, daysToGoal) {
 
+    if (title && manager && teaser && description && moneyGoal && image && city && daysToGoal) {
+      var confirmed = confirm("Have you added all the benefits you want?");
+      if (confirmed) {
+        var newProject: Project = new Project(title, manager, teaser, description, moneyGoal, image, city, daysToGoal, "category", this.newBenefits);
+        this.projectService.addProject(newProject);
+        console.log(newProject);
+      }
+    } else {
+      alert("Please fill out all fields");
+    }
 
-    var newProject: Project = new Project(title, manager, teaser, description, parseInt(moneyGoal), image, city, parseInt(daysToGoal), "category", this.newBenefits);
-
-    this.projectService.addProject(newProject);
-    console.log(newProject);
   }
 
   submitBenefitForm(name, value, description) {
-    var newBenefit = new Benefit(name, value, description);
-    this.newBenefits.push(newBenefit);
-    console.log(this.newBenefits)
+    if (name && value && description) {
+      var newBenefit = new Benefit(name, value, description);
+      this.newBenefits.push(newBenefit);
+      console.log(this.newBenefits)
+    } else {
+      alert("Please fill out all benefit fields")
+    }
   }
 
 }
